@@ -26,7 +26,9 @@ public class CubeScript : MonoBehaviour {
 	void Update () {
         this.transform.Rotate(spinSpeed);
         this.transform.RotateAround(Vector3.zero, spinAxis, rotateSpeed);
-
+	
+	//Makes Centre Cube Blue
+        this.GetComponent<Renderer>().material.color = new Color(0, 0, 255);
 
 	}
 }
